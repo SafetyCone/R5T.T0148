@@ -11,6 +11,22 @@ namespace R5T.T0148
     [FunctionalityMarker]
     public partial interface ILoggingOperator : IFunctionalityMarker
     {
+        public ILogger Get_Logger(
+            string categoryName,
+            string logFilePath)
+        {
+            // No using, keep reference and return.
+            var serviceProvider = Instances.ServicesOperator.GetFileLoggerServiceProvider(
+                logFilePath);
+
+            var logger = Instances.ServicesOperator.GetLogger(
+                serviceProvider,
+                categoryName);
+
+            var output = new LoggerWithServiceProvider(logger, serviceProvider);
+            return output;
+        }
+
         public void InFileLoggerContext_Synchronous<T>(
             string logFilePath,
             Action<ILogger> loggerAction)
