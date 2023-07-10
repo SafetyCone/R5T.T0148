@@ -69,7 +69,7 @@ namespace R5T.T0148
         }
 
         /// <summary>
-        /// Chooses <see cref="GetLogMessageTextWithLogLevel(ILoggerOperator, LogLevel, string, int, string, Exception)"/> as the default.
+        /// Chooses <see cref="GetLogMessageTextWithLogLevel(LogLevel, string, int, string, Exception)"/> as the default.
         /// </summary>
         public string GetLogMessageText(
             LogLevel logLevel, string logName, int eventId, string message, Exception exception)
