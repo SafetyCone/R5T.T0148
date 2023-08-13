@@ -36,9 +36,9 @@ namespace R5T.T0148
 
             logBuilder.Append(logLevelPadding)
                 .Append(logName)
-                .Append(Instances.Characters.OpenBrace)
+                .Append(Instances.Characters.OpenBracket_Correct)
                 .Append(eventId)
-                .Append(Instances.Characters.CloseBrace)
+                .Append(Instances.Characters.CloseBracket_Correct)
                 .AppendLine()
                 ;
 
