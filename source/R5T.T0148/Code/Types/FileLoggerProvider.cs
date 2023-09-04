@@ -15,7 +15,7 @@ namespace R5T.T0148
 
         private static void PerformFirstTimeSetup(FileLoggerProvider fileLoggerProvider)
         {
-            F0000.FileSystemOperator.Instance.EnsureDirectoryForFilePathExists(fileLoggerProvider.LogFilePath);
+            F0000.FileSystemOperator.Instance.Ensure_DirectoryExists_ForFilePath(fileLoggerProvider.LogFilePath);
 
             fileLoggerProvider.TextWriter = new StreamWriter(fileLoggerProvider.LogFilePath);
         }
