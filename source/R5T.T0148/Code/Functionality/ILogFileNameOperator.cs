@@ -21,7 +21,7 @@ namespace R5T.T0148
         public string GetLogFileName(
             string applicationName)
         {
-            var dateTime = Instances.NowOperator.GetNow();
+            var dateTime = Instances.NowOperator.Get_Now();
 
             var output = this.GetLogFileName(
                 applicationName,
