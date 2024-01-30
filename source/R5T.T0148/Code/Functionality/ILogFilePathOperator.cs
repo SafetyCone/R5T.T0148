@@ -14,7 +14,7 @@ namespace R5T.T0148
 
             var fileName = Instances.LogFileNameOperator.GetLogFileName();
 
-            var output = Instances.PathOperator.GetFilePath(
+            var output = Instances.PathOperator.Get_FilePath(
                 directoryPath,
                 fileName);
 

@@ -16,6 +16,7 @@ namespace R5T.T0148
         public static F0000.INowOperator NowOperator => F0000.NowOperator.Instance;
         public static F0002.IPathOperator PathOperator => F0002.PathOperator.Instance;
         public static IServicesOperator ServicesOperator => T0148.ServicesOperator.Instance;
+        public static L0066.IStringOperator StringOperator => L0066.StringOperator.Instance;
         public static IValues Values => T0148.Values.Instance;
     }
 }

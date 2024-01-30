@@ -43,7 +43,7 @@ namespace R5T.T0148
                 ;
 
             // Message
-            if (F0000.StringOperator.Instance.IsNotNullAndNotEmpty(message))
+            if (Instances.StringOperator.Is_NotNullOrEmpty(message))
             {
                 var messageTabinationCount = 6;
                 var messageTabination = new String(Instances.Characters.Space, messageTabinationCount);

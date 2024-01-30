@@ -51,7 +51,7 @@ namespace R5T.T0148.Internal
 
             var message = formatter(state, exception);
 
-            if (F0000.StringOperator.Instance.IsNotNullAndNotEmpty(message) || exception is object)
+            if (Instances.StringOperator.Is_NotNullOrEmpty(message) || exception is object)
             {
                 this.WriteMessage(logLevel, CategoryName, eventId.Id, message, exception);
             }
